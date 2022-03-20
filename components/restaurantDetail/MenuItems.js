@@ -75,7 +75,7 @@ export default function MenuItems() {
                 <View style={styles.menuItemStyle}>
                     <BouncyCheckbox 
                         iconStyle={{ borderColor: 'lightgray', borderRadius: 0 }}
-                        fillColor="green"
+                        fillColor="green"z
                     />
                     <FoodInfo food={food} />
                     <FoodImage food={food} />
@@ -88,7 +88,7 @@ export default function MenuItems() {
 }
 
 const FoodInfo = (props) => (
-    <View style={{ width: 240, justifyContent: "space-evenly" }}>
+    <View style={{ width: 200, justifyContent: "space-evenly" }}>
         <Text style={styles.titleStyle}>{props.food.title}</Text>
         <Text>{props.food.description}</Text>
         <Text>{props.food.price}</Text>
@@ -97,7 +97,7 @@ const FoodInfo = (props) => (
 
 const FoodImage = (props) => (
     <View>
-        <Image source={{uri: props.food.image}} style={{ width: 100, height: 100, borderRadius: 8, }} />
+        <Image source={{uri: props.food.image}} style={{ width: 100, height: 100, borderRadius: 8, marginLeft: 5}} />
     </View>
 );
 
