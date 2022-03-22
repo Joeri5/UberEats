@@ -1,6 +1,6 @@
 import { YELP_API_KEY, GOOGLE_API_KEY } from "@env";
 
 export default {
-    YELP_API_KEY,
-    GOOGLE_API_KEY
-}
+  yelp: YELP_API_KEY,
+  google: GOOGLE_API_KEY,
+};

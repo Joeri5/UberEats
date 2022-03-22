@@ -20,7 +20,7 @@ export default function Home({ navigation }) {
 
     const apiOptions = {
       headers: {
-        Authorization: `Bearer ${config.YELP_API_KEY}`,
+        Authorization: `Bearer ${config.yelp}`,
       },
     };
 
@@ -47,7 +47,10 @@ export default function Home({ navigation }) {
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Categories />
-        <RestaurantItems restaurantData={restaurantData} navigation={navigation} />
+        <RestaurantItems
+          restaurantData={restaurantData}
+          navigation={navigation}
+        />
       </ScrollView>
       <Divider width={1} />
       <BottomTabs />
